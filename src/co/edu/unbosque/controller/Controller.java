@@ -25,7 +25,10 @@ public class Controller {
 
 			System.out.println("Digite el tamaño de la matriz");
 			int N = sc.nextInt();
+			System.out.println("crear");
 			model.crear(N);
+			System.out.println("verificar");
+			model.verificar();;
 
 		}
 	}

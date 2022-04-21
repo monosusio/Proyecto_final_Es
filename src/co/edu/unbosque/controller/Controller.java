@@ -6,6 +6,7 @@ import co.edu.unbosque.model.model;
 
 public class Controller {
 
+	model model = new model();
 	Scanner sc = new Scanner(System.in);
 
 	public Controller() {
@@ -23,10 +24,7 @@ public class Controller {
 		for (int i = 0; i < T; i++) {
 
 			System.out.println("Digite el tamaño de la matriz");
-
 			int N = sc.nextInt();
-
-			model model = new model();
 			model.crear(N);
 
 		}

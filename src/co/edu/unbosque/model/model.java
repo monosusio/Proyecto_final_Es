@@ -2,34 +2,42 @@ package co.edu.unbosque.model;
 
 import java.util.Scanner;
 
+import javax.swing.JOptionPane;
+
 public class model  {
 	
-	int matriz[][];
-	int N;
 	Scanner sc = new Scanner(System.in);
 	
 	
 	public int [][] crear(int N) {
-		
-		int matriz[][] = new int[N][N];
-
+		int n = N;
+		int matriz[][] = new int[n][n];
 		for (int x = 0; x < matriz.length; x++) {
 			System.out.println("Ingrese valor de la fila con espacios " + (x + 1));
-			String val1 = sc.next();
+			String val1 = sc.nextLine();
+			//String val1 = JOptionPane.showInputDialog("Ingrese valor de la fila con espacios " + (x + 1));
 			String[] matrix = val1.split(" ");
-			System.out.println(matrix.toString());
 			for (int y = 0; y < matriz.length; y++) {
 				
 						matriz[x][y] = Integer.parseInt(matrix[y]);
 						
-						System.out.println("["+matriz[x][y]+"");
+						System.out.print("["+matriz[x][y]+"]");
 
 			}
+			
+			System.out.println("");
+			
 		}
-		
 		return matriz;
+	
 		
 	}
 	
+	
+	public void verificar() {
+	
+		
+		
+	}
 
 }
